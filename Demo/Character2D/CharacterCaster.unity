@@ -224,7 +224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 265191067}
   - component: {fileID: 265191070}
-  - component: {fileID: 265191069}
   - component: {fileID: 265191068}
   m_Layer: 0
   m_Name: CloudMouseCursor(1)
@@ -256,25 +255,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 265191066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d3ceacbd30bb9c438f28c8f7b058cfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 51e68c0c385f64fa494c9ddde493f664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
-  streamCamera: {fileID: 970763888}
-  graphicRaycaster: {fileID: 1408824995}
-  eventSystem: {fileID: 776474029}
---- !u!114 &265191069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265191066}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa892e2f6e8973e4da2dbb3e774baa7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   streamCamera: {fileID: 970763888}
   graphicRaycaster: {fileID: 1408824995}
   eventSystem: {fileID: 776474029}
@@ -315,7 +299,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c2c5dfdb1765a42f78565046d6bcec72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b30b95e0af954094a970fc36c0dba40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -457,6 +441,16 @@ PrefabInstance:
         type: 3}
       propertyPath: inputAxes.Array.data[4]
       value: MMB
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630590549408463744, guid: f3607423ce60e6d4ebe6a03bb93c171d,
+        type: 3}
+      propertyPath: apiKey
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630590549408463744, guid: f3607423ce60e6d4ebe6a03bb93c171d,
+        type: 3}
+      propertyPath: apiSecret
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3607423ce60e6d4ebe6a03bb93c171d, type: 3}
@@ -1093,7 +1087,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 905707507}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae5c9410fd7d24479de68c18a62ae35, type: 3}
+  m_Script: {fileID: 11500000, guid: 383d965ed37b54fd1a63174368d16f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &905707510
@@ -1211,6 +1205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StreamDisplayCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035564049070561815, guid: 0553ba57d635d4ea890e1b7a8a1ff49b,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1193739651738825525, guid: 0553ba57d635d4ea890e1b7a8a1ff49b,
         type: 3}
@@ -1330,11 +1329,6 @@ PrefabInstance:
     - target: {fileID: 1193739651738825526, guid: 0553ba57d635d4ea890e1b7a8a1ff49b,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2035564049070561815, guid: 0553ba57d635d4ea890e1b7a8a1ff49b,
-        type: 3}
-      propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1617,7 +1611,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136509066}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae5c9410fd7d24479de68c18a62ae35, type: 3}
+  m_Script: {fileID: 11500000, guid: 383d965ed37b54fd1a63174368d16f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1136509069
@@ -2135,7 +2129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4274546939611673}
   - component: {fileID: 212647150812928237}
-  - component: {fileID: 114145417678447885}
   - component: {fileID: 1009807075468642}
   m_Layer: 0
   m_Name: CloudMouseCursor(0)
@@ -2153,7 +2146,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1009807075468641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d3ceacbd30bb9c438f28c8f7b058cfb, type: 3}
+  m_Script: {fileID: 11500000, guid: 51e68c0c385f64fa494c9ddde493f664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
@@ -2174,21 +2167,6 @@ Transform:
   m_Father: {fileID: 456009387}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114145417678447885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009807075468641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa892e2f6e8973e4da2dbb3e774baa7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  streamCamera: {fileID: 970763888}
-  graphicRaycaster: {fileID: 1408824995}
-  eventSystem: {fileID: 776474029}
 --- !u!212 &212647150812928237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2226,7 +2204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c2c5dfdb1765a42f78565046d6bcec72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b30b95e0af954094a970fc36c0dba40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
