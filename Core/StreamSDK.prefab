@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7887410562919541051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7889692588713766593}
+  - component: {fileID: 1630590549408463744}
+  - component: {fileID: 7886725726797731981}
+  m_Layer: 0
+  m_Name: StreamSDK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7889692588713766593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887410562919541051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1630590549408463744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887410562919541051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1424509400, guid: 0bd277c8cf6e8ef4c859ef29438f6057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiKey: 
+  apiSecret: 
+  inputAxes: []
+  streamCamera: {fileID: 0}
+  streamDisplays:
+  - {fileID: 0}
+  streamSDKAdvancedOptions:
+    audioType: 0
+    audioBufferSize: 1
+    cloneDepth: 0
+    cloneLayer: 9
+    cloneRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    dontDestroyOnLoad: 0
+    filterMode: 0
+    displayType: 0
+    graphicsType: 3
+    resampleAudio: 1
+    updateStreamCamera: 0
+  audioFrequency: 0
+  audioPacket:
+    channels: 0
+    data: 
+    frequency: 0
+    id: 0
+    metadata: 
+    microphone: 0
+    position: 0
+    realFrequency: 0
+    samples: 0
+    sourceLength: 0
+    timestamp: 0
+    timestep: 0
+  averageFramesSpan: 0
+  framerate: 0
+  framerates: []
+  frequencyTable: 401f0000112b0000e02e0000803e000022560000c05d000044ac000080bb00000077010000ee0200
+  height: 0
+  id: 0
+  ids: 
+  micFrequency: 8000
+  numberReceivers: 0
+  realFrequency: 0
+  renderTextureLocal: {fileID: 0}
+  sendRate: 50
+  streamPacket:
+    audioPacketBytes: 
+    videoPacketBytes: 
+  videoPacket:
+    x: 0
+    y: 0
+    data: 
+    timestamp: 0
+    metadata: 
+    id: 0
+  videoQuality: 0
+  width: 0
+--- !u!81 &7886725726797731981
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887410562919541051}
+  m_Enabled: 1
