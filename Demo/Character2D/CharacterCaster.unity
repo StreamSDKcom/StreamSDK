@@ -616,6 +616,16 @@ PrefabInstance:
       propertyPath: containers.Array.data[6]
       value: 
       objectReference: {fileID: 456009386}
+    - target: {fileID: 8702410067068175121, guid: 653edec031d0648fa9d088a4ee903712,
+        type: 3}
+      propertyPath: width
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702410067068175121, guid: 653edec031d0648fa9d088a4ee903712,
+        type: 3}
+      propertyPath: height
+      value: 720
+      objectReference: {fileID: 0}
     - target: {fileID: 2746077323683236703, guid: 653edec031d0648fa9d088a4ee903712,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

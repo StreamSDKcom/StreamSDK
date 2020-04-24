@@ -35,7 +35,11 @@ public class StreamSDKMouseCursor : MonoBehaviour {
 			return;
 		}
 
-		mousePos = new Vector2( StreamSDK.GetMouseRemote( index ).x / 2, StreamSDK.GetMouseRemote( index ).y / 2 );
+		float scaleX = StreamSDK.instance.width < streamCamera.pixelRect.width ? ( StreamSDK.instance.width / streamCamera.pixelRect.width ) : ( streamCamera.pixelRect.width / StreamSDK.instance.width );
+		float scaleY = StreamSDK.instance.height < streamCamera.pixelRect.height ? ( StreamSDK.instance.height / streamCamera.pixelRect.height ) : ( streamCamera.pixelRect.height / StreamSDK.instance.height );
+		
+		mousePos = new Vector2( ( StreamSDK.GetMouseRemote( index ).x ) * scaleX, ( StreamSDK.GetMouseRemote( index ).y ) * scaleY );
+		
 		transform.position = streamCamera.ViewportToWorldPoint( new Vector3( mousePos.x, mousePos.y, 1 ) );
 		pointerEventData.position = new Vector2( mousePos.x * streamCamera.pixelWidth, mousePos.y * streamCamera.pixelHeight );
 		

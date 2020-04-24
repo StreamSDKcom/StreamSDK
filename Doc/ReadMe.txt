@@ -20,7 +20,7 @@ WebGL Mic Transmission
 /\
 4k
 /\
-6o fps
+6o fps (can actually do 60 fps now if you want, add it as an option to the framerate drop down menu under OptionsVideo, needs some tweaks to be more reliable though)
 /\
 Magic Leap
 /\
@@ -31,6 +31,11 @@ New Video Encoder
 Additional Audio Controls
 
 History:
+--------------------
+3.1.1
+Exposed Height, Width, and Fullscreen of StreamSDKUIManager in the Editor
+Adjusted StreamSDKMouseCursor so that mouse will be properly positioned even when stream and app resolutions are different
+
 --------------------
 3.1.0
 Added SendData array to StreamSDKTransporter to allow for custom per receiver data routing without having to write custom code!!!

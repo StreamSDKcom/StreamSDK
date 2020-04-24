@@ -7,8 +7,11 @@ using StreamSDKSpace;
 
 public class StreamSDKUIManager : MonoBehaviour {
 
+	public int          width      = 1280;
+	public int          height     = 720;
+	public bool         fullscreen = false;
 	public GameObject[] containers;
-	public EventSystem eventSystem;
+	public EventSystem  eventSystem;
 	public Text         message;
 
 	public static StreamSDKUIManager instance;
@@ -40,7 +43,7 @@ public class StreamSDKUIManager : MonoBehaviour {
 		
 		eventSystem.enabled = false;
 		
-		Screen.SetResolution( 1280, 720, false );
+		Screen.SetResolution( width, height, fullscreen );
 				
 		yield return new WaitUntil( ()=>StreamSDK.instance != null );		
 		yield return new WaitUntil( ()=>StreamSDKTransporter.instance != null );
