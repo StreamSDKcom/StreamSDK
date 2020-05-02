@@ -1,5 +1,5 @@
 # StreamSDK
- This is StreamSDK for Unity. It allows real-time streaming of any content Unity can render (audio, video, and input). Create video chat, cloud games, render streaming, etc.
+ This is StreamSDK for Unity. It allows real-time streaming of any content Unity can render (audio, video, and input). Create video chat, cloud games, render streaming, etc. StreamSDK Works on all platforms Any-to-Any™.
  
  StreamSDK License
  
