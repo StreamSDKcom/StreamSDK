@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4858014411414098488}
-  - component: {fileID: 4999154521202703316}
+  - component: {fileID: 6962519463245975768}
   m_Layer: 0
   m_Name: StreamSDKWebGL
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4999154521202703316
+--- !u!114 &6962519463245975768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,16 +40,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7124030791609729172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1424509400, guid: 0bd277c8cf6e8ef4c859ef29438f6057, type: 3}
+  m_Script: {fileID: -1424509400, guid: 3c8b15d52bcfe457e9714b6024cb0293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   apiKey: 
   apiSecret: 
   inputAxes: []
   streamCamera: {fileID: 0}
-  streamDisplays:
-  - {fileID: 0}
+  streamDisplays: []
   streamSDKAdvancedOptions:
+    audioCompressions: 0
     audioType: 0
     audioBufferSize: 1
     cloneDepth: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
       width: 1
       height: 1
     dontDestroyOnLoad: 0
+    dspBufferSize: 256
     filterMode: 0
     displayType: 0
     graphicsType: 3
@@ -69,6 +70,7 @@ MonoBehaviour:
   audioFrequency: 8000
   audioPacket:
     channels: 0
+    compressions: 0
     data: 
     frequency: 0
     id: 0
@@ -76,6 +78,7 @@ MonoBehaviour:
     microphone: 0
     position: 0
     realFrequency: 0
+    resampled: 0
     samples: 0
     sourceLength: 0
     timestamp: 0
@@ -83,7 +86,7 @@ MonoBehaviour:
   averageFramesSpan: 0
   framerate: 0
   framerates: []
-  frequencyTable: 401f0000112b0000e02e0000803e000022560000c05d000044ac000080bb00000077010000ee0200
+  frequencyTable: 401f0000112b0000e02e0000803e000022560000c05d0000287d000044ac000080bb00000077010000ee0200
   height: 320
   id: 0
   ids: 
@@ -95,9 +98,15 @@ MonoBehaviour:
   streamPacket:
     audioPacketBytes: 
     videoPacketBytes: 
+    inputPacketBytes: 
+    mousePacketBytes: 
   videoPacket:
     x: 0
     y: 0
+    width: 0
+    height: 0
+    stride: 0
+    turbo: 0
     data: 
     timestamp: 0
     metadata: 

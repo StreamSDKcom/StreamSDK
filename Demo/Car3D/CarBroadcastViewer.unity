@@ -809,6 +809,21 @@ PrefabInstance:
     - target: {fileID: 114299399733257544, guid: 8e9b247a630614ea6adf70dad55effc2,
         type: 3}
       propertyPath: sendData.Array.data[0].input
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114299399733257544, guid: 8e9b247a630614ea6adf70dad55effc2,
+        type: 3}
+      propertyPath: sendData.Array.data[0].audio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114299399733257544, guid: 8e9b247a630614ea6adf70dad55effc2,
+        type: 3}
+      propertyPath: sendData.Array.data[0].video
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114299399733257544, guid: 8e9b247a630614ea6adf70dad55effc2,
+        type: 3}
+      propertyPath: sendData.Array.data[0].stream
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4014810546237006, guid: 8e9b247a630614ea6adf70dad55effc2, type: 3}

@@ -14,23 +14,56 @@ Lowering the Framerate in the default examples' Options menu will reduce the vid
 
 Roadmap:
 --------------------
-WebGL Audio Transmission
+Multi-Engine Support
+
 /\
-WebGL Mic Transmission
+
+WebGL Mic & Audio Recording
+
 /\
-4k
+
+
+WebGL Turbo Compression / Decompression
+
 /\
-6o fps (can actually do 60 fps now if you want, add it as an option to the framerate drop down menu under OptionsVideo, needs some tweaks to be more reliable though)
+
+4k @ 6ofps
+
 /\
-Magic Leap
+
+Unity's New Input System
+
 /\
-Unity 2019.3
+
+WebRTC Wrapper
+
 /\
-New Video Encoder
-/\
-Additional Audio Controls
+
+TNet Wrapper
 
 History:
+--------------------
+3.2.0
+Added Turbo compression/decompression option to StreamSDK Advanced Options, in some cases this provides over a 100% improvement in performance!
+
+Improved audio processes, added Audio Optimization guide to docs, can now get crystal clear audio in most cases without resampling!
+
+Added Audio and Video Compressions Setters/Options, reduce bandwidth by 20-30%!
+
+Added StreamSDKTransporter > SendData > Stream option to reduce network packets, see docs for details.
+
+Documented Mouse input fields
+
+Added DSPBufferSize to StreamSDK Advanced Options
+
+Added 4k video format option
+
+Added 60 FPS framerate option
+
+Added table of contents to docs
+
+Added StreamSDKErrorDebug and StreamSDKUsageDebug prefabs, which print red text to the screen highlighting any account API related errors. This is a starting point for better end-user experience.
+
 --------------------
 3.1.1
 Exposed Height, Width, and Fullscreen of StreamSDKUIManager in the Editor

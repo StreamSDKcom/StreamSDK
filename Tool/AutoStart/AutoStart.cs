@@ -7,7 +7,8 @@ public class AutoStart : MonoBehaviour
 {
 	public int    audioFrequency;
 	public int    framerate;
-	public string videoFormat;
+	public int    videoWidth;
+	public int    videoHeight;
 	public int    quality;
 	
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class AutoStart : MonoBehaviour
 
         StreamSDK.instance.SetAudioFrequency( audioFrequency );
 		StreamSDK.instance.SetFramerate( framerate );
-		StreamSDK.instance.SetVideoFormat( videoFormat );
+		StreamSDK.instance.SetVideoFormatPrecise( videoWidth, videoHeight );
 		StreamSDK.instance.SetVideoQuality( quality );
 
 		StreamSDKTransporter.instance.StartServer( false );

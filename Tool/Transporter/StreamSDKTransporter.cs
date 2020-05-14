@@ -7,10 +7,11 @@ using System;
 
 [Serializable]
 public class SendData {
-	public bool audio = true;
-	public bool video = true;
-	public bool input = false;
-	public bool mouse = false;
+	public bool audio  = true;
+	public bool video  = true;
+	public bool input  = false;
+	public bool mouse  = false;
+	public bool stream = false;
 }
 
 //Extend NetTech as needed, StreamSDK supports any networking technology!
@@ -281,16 +282,18 @@ public class StreamSDKTransporter : MonoBehaviour {
 			return;
 
 		for( int i = 0; i < sendData.Length; i++ ) {
-			if( sendData[ i ].audio && sendData[ i ].video )
+			if( sendData[ i ].stream )
 				SendStream( i );
-			if( sendData[ i ].audio && !sendData[ i ].video )
-				SendAudio( i );
-			if( !sendData[ i ].audio && sendData[ i ].video )
-				SendVideo( i );	
-			if( sendData[ i ].input )
-				SendInput( i );
-			if( sendData[ i ].mouse )
-				SendMouse( i );
+			else {
+				if( sendData[ i ].audio )
+					SendAudio( i );
+				if( sendData[ i ].video )
+					SendVideo( i );	
+				if( sendData[ i ].input )
+					SendInput( i );
+				if( sendData[ i ].mouse )
+					SendMouse( i );
+			}
 		}
 
 		StreamSDK.KillPackets();
@@ -348,6 +351,8 @@ public class StreamSDKTransporter : MonoBehaviour {
 	}
 
 	void SendStream( int receiver ) {
+		StreamSDK.GetInput();
+		StreamSDK.GetMouse();
 		byte[] stream = StreamSDK.GetStream();
 		if( stream != null ) {
 			switch( netTech ) {

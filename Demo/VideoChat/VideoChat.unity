@@ -127,11 +127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8741523919774977302, guid: 653edec031d0648fa9d088a4ee903712,
-        type: 3}
-      propertyPath: m_Name
-      value: Shell
-      objectReference: {fileID: 0}
     - target: {fileID: 8741523919774977385, guid: 653edec031d0648fa9d088a4ee903712,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -186,6 +181,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741523919774977302, guid: 653edec031d0648fa9d088a4ee903712,
+        type: 3}
+      propertyPath: m_Name
+      value: Shell
       objectReference: {fileID: 0}
     - target: {fileID: 8702410067068175121, guid: 653edec031d0648fa9d088a4ee903712,
         type: 3}
@@ -363,12 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 374821429}
     - target: {fileID: 114299399733257544, guid: 8e9b247a630614ea6adf70dad55effc2,
         type: 3}
-      propertyPath: sendData.Array.data[0].audio
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114299399733257544, guid: 8e9b247a630614ea6adf70dad55effc2,
-        type: 3}
-      propertyPath: sendData.Array.data[0].video
+      propertyPath: sendData.Array.data[0].stream
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4014810546237006, guid: 8e9b247a630614ea6adf70dad55effc2, type: 3}
@@ -659,11 +654,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7887410562919541051, guid: f3607423ce60e6d4ebe6a03bb93c171d,
-        type: 3}
-      propertyPath: m_Name
-      value: StreamSDK
-      objectReference: {fileID: 0}
     - target: {fileID: 7889692588713766593, guid: f3607423ce60e6d4ebe6a03bb93c171d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -718,6 +708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887410562919541051, guid: f3607423ce60e6d4ebe6a03bb93c171d,
+        type: 3}
+      propertyPath: m_Name
+      value: StreamSDK
       objectReference: {fileID: 0}
     - target: {fileID: 1630590549408463744, guid: f3607423ce60e6d4ebe6a03bb93c171d,
         type: 3}
@@ -782,6 +777,16 @@ PrefabInstance:
     - target: {fileID: 1630590549408463744, guid: f3607423ce60e6d4ebe6a03bb93c171d,
         type: 3}
       propertyPath: streamDisplays.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630590549408463744, guid: f3607423ce60e6d4ebe6a03bb93c171d,
+        type: 3}
+      propertyPath: apiKey
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1630590549408463744, guid: f3607423ce60e6d4ebe6a03bb93c171d,
+        type: 3}
+      propertyPath: apiSecret
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -885,11 +890,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4727179057396285866, guid: 1d10a2906249e4a14af7605ab3a69068,
-        type: 3}
-      propertyPath: m_Name
-      value: Application
-      objectReference: {fileID: 0}
     - target: {fileID: 4727179057396285877, guid: 1d10a2906249e4a14af7605ab3a69068,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -944,6 +944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4727179057396285866, guid: 1d10a2906249e4a14af7605ab3a69068,
+        type: 3}
+      propertyPath: m_Name
+      value: Application
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d10a2906249e4a14af7605ab3a69068, type: 3}
@@ -1690,16 +1695,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1193739650740400620}
     m_Modifications:
-    - target: {fileID: 952515260093793824, guid: ccf7fcd5f17cf4d7cb64ceb518728ce2,
-        type: 3}
-      propertyPath: m_Name
-      value: StreamDisplay
-      objectReference: {fileID: 0}
-    - target: {fileID: 952515260093793824, guid: ccf7fcd5f17cf4d7cb64ceb518728ce2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1019635813608235510, guid: ccf7fcd5f17cf4d7cb64ceb518728ce2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1804,6 +1799,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 952515260093793824, guid: ccf7fcd5f17cf4d7cb64ceb518728ce2,
+        type: 3}
+      propertyPath: m_Name
+      value: StreamDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 952515260093793824, guid: ccf7fcd5f17cf4d7cb64ceb518728ce2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 913884741238138436, guid: ccf7fcd5f17cf4d7cb64ceb518728ce2,
         type: 3}
