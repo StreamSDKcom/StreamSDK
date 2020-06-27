@@ -1,5 +1,7 @@
 # StreamSDK
 This is StreamSDK (currently for Unity); a programmable, real-time interactive streaming engine. It allows real-time streaming of any content Unity can render (audio, video, and input). Create video chat, cloud games, remote rendering, etc. StreamSDK works on all platforms Any-to-Any™.
+
+![](streamsdk.gif)
  
 # Use Cases
 
