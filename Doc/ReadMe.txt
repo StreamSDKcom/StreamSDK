@@ -14,35 +14,16 @@ Lowering the Framerate in the default examples' Options menu will reduce the vid
 
 Roadmap:
 --------------------
-Multi-Engine Support
-
-/\
-
-WebGL Mic & Audio Recording
-
-/\
-
-
-WebGL Turbo Compression / Decompression
-
-/\
-
-4k @ 6ofps
-
-/\
-
-Unity's New Input System
-
-/\
-
-WebRTC Wrapper
-
-/\
-
-TNet Wrapper
+Newcade.com example platform, many engine upgrades coming!
 
 History:
 --------------------
+3.3.1
+Fixed issue in which StreamSDK.AddClient( int id ) was creating duplicate entries preventing data from being sent from clients properly.
+
+3.3.0
+Fixed backend issues preventing authentication.
+
 3.2.0
 Added Turbo compression/decompression option to StreamSDK Advanced Options, in some cases this provides over a 100% improvement in performance!
 
